@@ -1,0 +1,101 @@
+{
+  "name": "deno-ts-boilerplate",
+  "version": "0.0.1",
+  "description": "Minimalistic boilerplate to quick-start Deno development in TypeScript.",
+  "homepage": "https://github.com/jiifw/deno-ts-boilerplate",
+  "exports": {
+    "name": "deno-ts-boilerplate"
+  },
+  "keywords": [
+    "deno",
+    "javascript",
+    "boilerplate",
+    "express",
+    "fastify",
+    "microservices",
+    "typescript",
+    "eslint",
+    "serverless",
+    "backend",
+    "jest",
+    "service",
+    "back-end",
+    "prettier",
+    "project-template",
+    "starter-template",
+    "deno-server",
+    "typescript-boilerplate",
+    "cjs-modules",
+    "deno-typescript-boilerplate"
+  ],
+  "author": {
+    "name": "Junaid Atari",
+    "email": "mj.atari@gmail.com",
+    "url": "https://github.com/blacksmoke26"
+  },
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "strictNullChecks": false,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "fmt": {
+    "include": [
+      "src/",
+      "__tests__/"
+    ],
+    "indentWidth": 2,
+    "singleQuote": true,
+    "useTabs": false,
+    "lineWidth": 160,
+    "semiColons": true
+  },
+  "lint": {
+    "include": [
+      "src/",
+      "__tests__/"
+    ],
+    "report": "json",
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      // See more: https://lint.deno.land/
+      "exclude": [
+        "no-unused-vars",
+        "require-await"
+      ]
+    }
+  },
+  "test": {
+    "include": [
+      "__tests__/"
+    ]
+  },
+  "tasks": {
+    "start": "deno run --config ./deno.json -A src/index.ts",
+    "start:dev": "deno run --config ./deno.json -A --watch src/index.ts",
+    "start:debug": "deno run --config ./deno.json -A --inspect --watch src/index.ts",
+    "cron": "deno run --config ./deno.json -A src/cron.ts",
+    "clean": "rimraf coverage tmp runtime && mkdir coverage runtime",
+    "lint": "deno lint",
+    "prettier": "deno fmt",
+    "test": "deno test --reporter=dot ",
+    "test:watch": "deno test --watch",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop ecosystem.config.js",
+    "pm2:delete": "pm2 delete ecosystem.config.js"
+  },
+  "unstable": [
+    "cron"
+  ],
+  "imports": {
+    "~/": "./src/",
+    "@faker-js/faker": "npm:@faker-js/faker@^9.2.0",
+    "rimraf": "npm:rimraf@6.0.1",
+    "@std/assert": "jsr:@std/assert@1"
+  }
+}
