@@ -4,19 +4,19 @@ Developer Ready: A comprehensive template. Works out of the box for most [Deno](
 
 Instant Value: All basic tools included and configured:
 
-- [TypeScript](https://www.typescriptlang.org/).
-- [Deno Lint](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/) with some initial rules' recommendation.
+- Bundled [TypeScript](https://www.typescriptlang.org/).
+- [Deno Lint](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/#linting) with some initial rules' recommendation.
 - [Deno Test](https://docs.deno.com/runtime/fundamentals/testing/) for fast unit testing and code coverage.
-- [Deno Format](https://docs.deno.com/runtime/fundamentals/testing/) to enforce consistent code style.
-- Deno [scripts](#available-scripts) for common operations.
+- [Deno Format](https://docs.deno.com/runtime/fundamentals/linting_and_formatting/#formatting) to enforce consistent code style.
+- Deno [tasks](#available-scripts) for common operations.
 - `.editorconfig` for consistent file format.
 - Simple example of TypeScript code and unit test.
 - Use all ES6 features *(including experimental and proposal)*.
 - Minimal `.env` files for environment customization.
 - Clean imports: No relative files path.
 - Zero dependencies: Install your own packages.
-- `Deno Cron` as a task schedular
-- `PM2` as a process manager
+- `Deno Cron` as a task schedular.
+- `PM2` as a process manager.
 
 🤲 Free as in speech: available under the APLv2 license.
 
@@ -24,7 +24,7 @@ Instant Value: All basic tools included and configured:
 
 This project is intended to be used with the latest Active LTS release of [Deno](https://docs.deno.com/runtime/fundamentals/stability_and_releases/).
 
-If you don't have Deno 2+, Check installation guide [here](https://docs.deno.com/runtime/getting_started/installation/).
+If you don't have Deno 2.1+, Check installation guide [here](https://docs.deno.com/runtime/getting_started/installation/).
 
 ### Use as a repository template
 
@@ -47,10 +47,10 @@ deno install
 
 ### Download latest release
 
-Download and unzip the current **main** branch or one of the tags:
+Download and unzip the current **master** branch or one of the tags:
 
 ```sh
-wget https://github.com/jiifw/deno-ts-boilerplate/archive/main.zip -O deno-ts-boilerplate.zip
+wget https://github.com/jiifw/deno-ts-boilerplate/archive/master.zip -O deno-ts-boilerplate.zip
 unzip deno-ts-boilerplate.zip && rm deno-ts-boilerplate.zip
 ```
 
