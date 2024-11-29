@@ -63,7 +63,6 @@
       "tags": [
         "recommended"
       ],
-      // See more: https://lint.deno.land/
       "exclude": [
         "no-unused-vars",
         "require-await"
@@ -83,7 +82,7 @@
     "clean": "rimraf coverage tmp runtime && mkdir coverage runtime",
     "lint": "deno lint",
     "prettier": "deno fmt",
-    "test": "deno test --reporter=dot ",
+    "test": "deno test --reporter=dot",
     "test:watch": "deno test --watch",
     "pm2:start": "pm2 start ecosystem.config.js",
     "pm2:stop": "pm2 stop ecosystem.config.js",
@@ -94,8 +93,6 @@
   ],
   "imports": {
     "~/": "./src/",
-    "@faker-js/faker": "npm:@faker-js/faker@^9.2.0",
-    "rimraf": "npm:rimraf@6.0.1",
-    "@std/assert": "jsr:@std/assert@1"
+    "rimraf": "npm:rimraf@6.0.1"
   }
 }
