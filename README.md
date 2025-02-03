@@ -1,4 +1,4 @@
-# deno-ts-boilerplate
+# Deno2 TypeScript Minimal Boilerplate
 
 Developer Ready: A comprehensive template. Works out of the box for most [Deno](https://deno.com) projects.
 
